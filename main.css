@@ -1,0 +1,272 @@
+body {
+  max-width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container .card.first {
+  height: 80vh;
+  background: #E38826;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px 50px;
+  overflow: hidden;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.container .card.first .icon {
+  margin-top: 50px;
+  background: #000;
+}
+
+.container .card.first .icon .fas {
+  font-size: 2.5rem;
+  position: relative;
+  left: -35px;
+  top: -10px;
+  color: #fff;
+  opacity: 0.2;
+}
+
+.container .card.first .icon .circle {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: #000;
+  border-radius: 50%;
+  opacity: 0.2;
+}
+
+.container .card.first h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: white;
+  background: #006970;
+}
+
+.container .card.first p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+  height: 300px;
+  background: #000;
+}
+
+.container .card.first a {
+  color: #E38826;
+  font-size: 1.1rem;
+  background: #fff;
+  width: 175px;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 40px;
+  text-decoration: none;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.container .card.first a:hover {
+  background: #E38826;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.container .card.second {
+  height: 80vh;
+  background: #006970;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px 50px;
+  overflow: hidden;
+}
+
+.container .card.second .icon {
+  margin-top: 50px;
+  background: #000;
+}
+
+.container .card.second .icon .fas {
+  font-size: 2.5rem;
+  position: relative;
+  left: -35px;
+  top: -10px;
+  color: #fff;
+  opacity: 0.2;
+}
+
+.container .card.second .icon .circle {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: #000;
+  border-radius: 50%;
+  opacity: 0.2;
+}
+
+.container .card.second h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: white;
+  background: #006970;
+}
+
+.container .card.second p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+  height: 300px;
+  background: #000;
+}
+
+.container .card.second a {
+  color: #006970;
+  font-size: 1.1rem;
+  background: #fff;
+  width: 175px;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 40px;
+  text-decoration: none;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.container .card.second a:hover {
+  background: #006970;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.container .card.third {
+  height: 80vh;
+  background: #004241;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px 50px;
+  overflow: hidden;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.container .card.third .icon {
+  margin-top: 50px;
+  background: #000;
+}
+
+.container .card.third .icon .fas {
+  font-size: 2.5rem;
+  position: relative;
+  left: -35px;
+  top: -10px;
+  color: #fff;
+  opacity: 0.2;
+}
+
+.container .card.third .icon .circle {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: #000;
+  border-radius: 50%;
+  opacity: 0.2;
+}
+
+.container .card.third h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: white;
+  background: #006970;
+}
+
+.container .card.third p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+  height: 300px;
+  background: #000;
+}
+
+.container .card.third a {
+  color: #004241;
+  font-size: 1.1rem;
+  background: #fff;
+  width: 175px;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 40px;
+  text-decoration: none;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.container .card.third a:hover {
+  background: #004241;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 70%;
+    margin: 50px auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+  .container .card.first {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+  }
+  .container .card.third {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,147 @@
+//variable
+$orange: #E38826; 
+$blue: #006970;
+$green: #004241;
+
+//function
+@mixin card ($background: #fff){
+    height: 80vh;
+    background: $background;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px;
+    overflow: hidden;
+    .icon{
+        @include icon();
+    }
+
+    .icon .circle{
+        @include circle();
+    }
+
+    h1{
+        font-family: 'Big Shoulders Display', cursive;
+        font-size: 2.4rem;
+        font-weight: bold;
+        color: white;
+        background: #006970;
+    }
+
+    p{
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: white;
+        height: 300px;
+        background: #000;
+    }
+
+    a{
+        @include link($background);
+    }
+
+    a:hover{
+        @include link-hover($background);
+    }
+}
+
+
+@mixin circle {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: #000;
+    border-radius: 50%;
+    opacity: 0.2;
+}
+
+@mixin icon{
+    margin-top: 50px;
+    background: #000;
+    .fas{
+        font-size: 2.5rem;
+        position: relative;
+        left: -35px;
+        top: -10px;
+        color: #fff;
+        opacity: 0.2;
+    }
+}
+
+@mixin link($color: #000) {
+    color: $color;
+    font-size: 1.1rem;
+    background: #fff;
+    width: 175px;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 40px;
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+@mixin link-hover($background: #fff) {
+    background: $background;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+//style
+body{
+    max-width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    // border-radius: 30px;
+    // border: 5px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .card.first{
+        @include card(#E38826);
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    .card.second{
+        @include card(#006970);
+    }
+    .card.third{
+        @include card(#004241);
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+}
+
+@media screen and(max-width: 1000px) {
+    .container{
+        width: 90%;
+    }
+}
+
+@media screen and(max-width: 800px) {
+    .container{
+        width: 70%;
+        margin: 50px auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        .card.first{
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 0px;
+        }
+
+        .card.third{
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 0px;
+        }
+    }
+}
